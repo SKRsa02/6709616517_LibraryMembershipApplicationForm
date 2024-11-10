@@ -2,35 +2,29 @@
 <html>
 <head>
     <title>แบบฟอร์มสมัครสมาชิกห้องสมุด</title>
-    <style>
-        
-        form {
-            width: 50%;
-            margin: 0 auto;
-        }
-        label {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
     <h1>แบบฟอร์มสมัครสมาชิกห้องสมุด</h1>
     <form action="process.php" method="post">
-        <label for="name_th">ชื่อ-นามสกุล (ภาษาไทย):</label>
+        <label for="name_th">ชื่อ-นามสกุล (ภาษาไทย)*</label>
         <input type="text" id="name_th" name="name_th" required>
 
-        <label for="name_en">ชื่อ-นามสกุล (ภาษาอังกฤษ):</label>
+        <label for="name_en">ชื่อ-นามสกุล (ภาษาอังกฤษ)*</label>
         <input type="text" id="name_en" name="name_en" required>
 
         <label>เพศ:</label>
         <input type="radio" name="gender" value="male"> ชาย
         <input type="radio" name="gender" value="female"> หญิง
+        <input type="radio" name="gender" value="female"> 
 
         <label>ประเภทของหนังสือที่สนใจ:</label>
         <select name="book_type">
             <option value="fiction">นิยาย</option>
             <option value="nonfiction">สารคดี</option>
             <option value="textbook">ตำรา</option>
+            <option value="cartoon">การ์ตูน</option>
         </select>
 
         <label>ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่:</label>
