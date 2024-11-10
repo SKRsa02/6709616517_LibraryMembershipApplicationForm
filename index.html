@@ -6,7 +6,7 @@
   
 </head>
 <body>
-    <h1>แบบฟอร์มสมัครสมาชิกห้องสมุด</h1>
+    <h1>Library Membership Application Form</h1>
     <form action="process.php" method="post">
         <label for="name_th">ชื่อ-นามสกุล (ภาษาไทย)*</label>
         <input type="text" id="name_th" name="name_th" required>
@@ -14,10 +14,14 @@
         <label for="name_en">ชื่อ-นามสกุล (ภาษาอังกฤษ)*</label>
         <input type="text" id="name_en" name="name_en" required>
 
+        <label for="name_en">รหัสนักศึกษา*</label>
+        <input type="text" id="name_en" name="student id" required>
+
+
         <label>เพศ:</label>
         <input type="radio" name="gender" value="male"> ชาย
         <input type="radio" name="gender" value="female"> หญิง
-        <input type="radio" name="gender" value="female"> 
+        <input type="radio" name="gender" value="lgbtq+"> lgbtq+
 
         <label>ประเภทของหนังสือที่สนใจ:</label>
         <select name="book_type">
@@ -29,6 +33,12 @@
 
         <label>ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่:</label>
         <input type="checkbox" name="newsletter">
+
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required>
+
+
 
         <button type="submit">ส่งแบบฟอร์ม</button>
     </form>
